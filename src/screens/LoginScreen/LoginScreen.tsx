@@ -3,6 +3,7 @@ import { SafeAreaView, StatusBar, Text, useColorScheme } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { StackNativeScreenProps } from '../../App';
 import { Button } from '../../components/atoms/Button/Button';
+import { Input } from '../../components/atoms/Input/Input';
 
 type LoginScreenProps = StackNativeScreenProps<'LoginScreen'>;
 
@@ -17,6 +18,8 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <Text>LoginScreen</Text>
+      <Input title="Email" keyboardType="email-address" />
+      <Input title="Password" secureTextEntry />
       <Button
         onPress={() =>
           navigation.navigate('ProfileScreen', {

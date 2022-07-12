@@ -10,7 +10,7 @@ interface ButtonProps {
 export const Button: React.FC<ButtonProps> = props => {
   return (
     <Pressable onPress={props.onPress} style={styles.buttonContainer}>
-      <Text>{props.text}</Text>
+      <Text style={styles.buttonText}>{props.text}</Text>
     </Pressable>
   );
 };

@@ -5,7 +5,7 @@ import { StackNativeScreenProps } from '../../App';
 
 type ProfileScreenProps = StackNativeScreenProps<'ProfileScreen'>;
 
-const ProfileScreen: React.FC<ProfileScreenProps> = ({ navigation }) => {
+const ProfileScreen: React.FC<ProfileScreenProps> = ({ route }) => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -16,6 +16,9 @@ const ProfileScreen: React.FC<ProfileScreenProps> = ({ navigation }) => {
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <Text>ProfileScreen</Text>
+      <Text>Id: {route.params.id}</Text>
+      <Text>Firstname: {route.params.firstName}</Text>
+      <Text>Lastname: {route.params.lastName}</Text>
     </SafeAreaView>
   );
 };

@@ -2,8 +2,8 @@ import React from 'react';
 import { Pressable, Text } from 'react-native';
 import { styles } from './Button.style';
 
-interface ButtonProps {
-  onPress: () => void;
+export interface ButtonProps {
+  onPress?: () => void;
   text: string;
 }
 
@@ -17,5 +17,5 @@ export const Button: React.FC<ButtonProps> = props => {
 
 Button.defaultProps = {
   onPress: () => {},
-  text: 'Button Text',
+  text: 'Primary Button',
 };

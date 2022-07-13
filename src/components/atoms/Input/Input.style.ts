@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     borderColor: '#08949B',
     borderStyle: 'solid',
     borderRadius: 20,
-    borderWidth: 1,
+    borderWidth: 2,
     padding: 12,
   },
 });

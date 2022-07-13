@@ -1,7 +1,9 @@
 import React from 'react';
+import { View } from 'react-native';
 
 import { Button } from '../../atoms';
 import { Input } from '../../molecules';
+import { styles } from './LoginForm.style';
 
 interface LoginFormProps {
   onSubmit: () => void;
@@ -10,10 +12,10 @@ interface LoginFormProps {
 
 export const LoginForm: React.FC<LoginFormProps> = props => {
   return (
-    <>
+    <View style={styles.container}>
       <Input label="Email" keyboardType="email-address" />
       <Input label="Password" secureTextEntry />
       <Button onPress={props.onSubmit} text="Go To Profile" />
-    </>
+    </View>
   );
 };

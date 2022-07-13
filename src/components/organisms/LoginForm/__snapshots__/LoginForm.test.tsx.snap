@@ -1,12 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LoginForm should render correctly 1`] = `
-Array [
+<View
+  style={
+    Object {
+      "flex": 4,
+      "flexDirection": "column",
+      "justifyContent": "space-between",
+      "padding": 30,
+    }
+  }
+>
   <View
     style={
       Object {
-        "display": "flex",
         "flexDirection": "column",
+        "height": 78,
+        "justifyContent": "space-between",
       }
     }
   >
@@ -43,12 +53,13 @@ Array [
       }
       testID="input"
     />
-  </View>,
+  </View>
   <View
     style={
       Object {
-        "display": "flex",
         "flexDirection": "column",
+        "height": 78,
+        "justifyContent": "space-between",
       }
     }
   >
@@ -85,7 +96,7 @@ Array [
       }
       testID="input"
     />
-  </View>,
+  </View>
   <View
     accessible={true}
     collapsable={false}
@@ -125,6 +136,6 @@ Array [
     >
       Go To Profile
     </Text>
-  </View>,
-]
+  </View>
+</View>
 `;

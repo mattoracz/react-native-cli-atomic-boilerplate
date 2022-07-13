@@ -4,8 +4,9 @@ exports[`Input should render correctly 1`] = `
 <View
   style={
     Object {
-      "display": "flex",
       "flexDirection": "column",
+      "height": 78,
+      "justifyContent": "space-between",
     }
   }
 >

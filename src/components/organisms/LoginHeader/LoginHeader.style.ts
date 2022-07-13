@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  inputContainer: {
-    height: 78,
-    justifyContent: 'space-between',
+  container: {
+    flex: 2,
+    justifyContent: 'flex-end',
     flexDirection: 'column',
   },
 });

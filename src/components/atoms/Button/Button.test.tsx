@@ -17,7 +17,6 @@ describe('Button', () => {
 
   it('should call the provided onPress function when pressed', () => {
     const component = <Button text="Primary Button" onPress={spyOnPress} />;
-
     const wrapper = render(component);
 
     fireEvent(wrapper.getByTestId('button'), 'onPress');

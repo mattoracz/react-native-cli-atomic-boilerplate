@@ -1,15 +1,15 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  inputContainer: {
+  headerContainer: {
     minWidth: 200,
-    minHeight: 40,
+    minHeight: 45,
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#08949B',
-    borderStyle: 'solid',
-    borderRadius: 20,
-    borderWidth: 2,
-    padding: 12,
+  },
+  headerText: {
+    color: 'black',
+    fontWeight: '600',
+    fontSize: 30,
   },
 });

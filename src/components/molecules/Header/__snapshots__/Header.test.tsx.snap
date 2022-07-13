@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "minHeight": 45,
+      "minWidth": 200,
+    }
+  }
+  testID="header"
+>
+  <Text
+    style={
+      Object {
+        "color": "black",
+        "fontSize": 30,
+        "fontWeight": "600",
+      }
+    }
+    testID="header-text"
+  >
+    Header Text
+  </Text>
+</View>
+`;

@@ -25,12 +25,12 @@ const App = () => {
         <Stack.Screen
           name="LoginScreen"
           component={LoginScreen}
-          options={{ title: 'Login Screen' }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="ProfileScreen"
           component={ProfileScreen}
-          options={{ title: 'Profile Screen' }}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

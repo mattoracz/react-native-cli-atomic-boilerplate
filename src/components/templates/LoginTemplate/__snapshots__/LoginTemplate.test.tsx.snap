@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginTemplate should render correctly 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "minHeight": 45,
+        "minWidth": 200,
+      }
+    }
+    testID="header"
+  >
+    <Text
+      style={
+        Object {
+          "color": "black",
+          "fontSize": 30,
+          "fontWeight": "600",
+        }
+      }
+      testID="header-text"
+    >
+      Login Form title
+    </Text>
+  </View>,
+  <View
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "black",
+          "fontSize": 16,
+          "fontWeight": "600",
+        }
+      }
+      testID="label"
+    >
+      Email
+    </Text>
+    <TextInput
+      keyboardType="email-address"
+      placeholder="Email"
+      style={
+        Object {
+          "alignItems": "center",
+          "borderColor": "#08949B",
+          "borderRadius": 20,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "fontSize": 16,
+          "fontWeight": "600",
+          "justifyContent": "center",
+          "minHeight": 50,
+          "minWidth": 200,
+          "paddingLeft": 17,
+          "paddingRight": 17,
+        }
+      }
+      testID="input"
+    />
+  </View>,
+  <View
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "black",
+          "fontSize": 16,
+          "fontWeight": "600",
+        }
+      }
+      testID="label"
+    >
+      Password
+    </Text>
+    <TextInput
+      placeholder="Password"
+      secureTextEntry={true}
+      style={
+        Object {
+          "alignItems": "center",
+          "borderColor": "#08949B",
+          "borderRadius": 20,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "fontSize": 16,
+          "fontWeight": "600",
+          "justifyContent": "center",
+          "minHeight": 50,
+          "minWidth": 200,
+          "paddingLeft": 17,
+          "paddingRight": 17,
+        }
+      }
+      testID="input"
+    />
+  </View>,
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#08949B",
+        "borderRadius": 20,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "justifyContent": "center",
+        "minHeight": 60,
+        "minWidth": 200,
+      }
+    }
+    testID="button"
+  >
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 16,
+          "fontWeight": "600",
+        }
+      }
+      testID="button-text"
+    >
+      Go To Profile
+    </Text>
+  </View>,
+]
+`;

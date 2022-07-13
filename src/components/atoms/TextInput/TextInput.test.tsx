@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
-import { Input } from './Input';
+import { TextInput } from './TextInput';
 
-describe('Input', () => {
+describe('TextInput', () => {
   const spyOnPress = jest.fn();
 
   beforeEach(() => {
@@ -10,7 +10,7 @@ describe('Input', () => {
   });
 
   it('should render correctly', () => {
-    const tree = render(<Input title="Primary Input" />);
+    const tree = render(<TextInput placeholder="Primary Input" />);
 
     expect(tree).toMatchSnapshot();
   });

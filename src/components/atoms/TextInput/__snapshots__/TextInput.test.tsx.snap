@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input should render correctly 1`] = `
+exports[`TextInput should render correctly 1`] = `
 <TextInput
   placeholder="Primary Input"
   style={
@@ -9,11 +9,14 @@ exports[`Input should render correctly 1`] = `
       "borderColor": "#08949B",
       "borderRadius": 20,
       "borderStyle": "solid",
-      "borderWidth": 2,
+      "borderWidth": 1,
+      "fontSize": 16,
+      "fontWeight": "600",
       "justifyContent": "center",
-      "minHeight": 40,
+      "minHeight": 50,
       "minWidth": 200,
-      "padding": 12,
+      "paddingLeft": 17,
+      "paddingRight": 17,
     }
   }
   testID="input"

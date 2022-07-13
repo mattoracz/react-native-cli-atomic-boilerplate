@@ -22,7 +22,7 @@ exports[`Button should render correctly 1`] = `
       "borderStyle": "solid",
       "borderWidth": 0,
       "justifyContent": "center",
-      "minHeight": 40,
+      "minHeight": 60,
       "minWidth": 200,
     }
   }
@@ -32,6 +32,7 @@ exports[`Button should render correctly 1`] = `
     style={
       Object {
         "color": "white",
+        "fontSize": 16,
         "fontWeight": "600",
       }
     }

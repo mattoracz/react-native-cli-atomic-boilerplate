@@ -5,12 +5,22 @@
 
 function loadStories() {
   require('../src/components/atoms/Button/Button.stories');
-  require('../src/components/atoms/Input/Input.stories');
+  require('../src/components/atoms/Label/Label.stories');
+  require('../src/components/atoms/TextInput/TextInput.stories');
+  require('../src/components/molecules/Header/Header.stories');
+  require('../src/components/molecules/Input/Input.stories');
+  require('../src/components/organisms/LoginForm/LoginForm.stories');
+  require('../src/components/templates/LoginTemplate/LoginTemplate.stories');
 }
 
 const stories = [
   '../src/components/atoms/Button/Button.stories',
-  '../src/components/atoms/Input/Input.stories',
+  '../src/components/atoms/Label/Label.stories',
+  '../src/components/atoms/TextInput/TextInput.stories',
+  '../src/components/molecules/Header/Header.stories',
+  '../src/components/molecules/Input/Input.stories',
+  '../src/components/organisms/LoginForm/LoginForm.stories',
+  '../src/components/templates/LoginTemplate/LoginTemplate.stories',
 ];
 
 module.exports = {

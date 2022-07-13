@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   buttonContainer: {
     minWidth: 200,
-    minHeight: 40,
+    minHeight: 60,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#08949B',
@@ -14,5 +14,6 @@ export const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontWeight: '600',
+    fontSize: 16,
   },
 });

@@ -1,7 +1,17 @@
 {
   "name": "ReactNativeCliAtomicBoilerplate",
   "version": "0.0.1",
-  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/mattoracz/react-native-cli-atomic-boilerplate",
+  "contributors": [
+    "Matt Oracz <contact@mattoracz.com> (https://github.com/mattoracz)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattoracz/react-native-cli-atomic-boilerplate"
+  },
+  "private": false,
+  "author": "Matt Oracz",
   "scripts": {
     "android": "ENVFILE=.env.local react-native run-android",
     "android-storybook": "ENVFILE=.env.storybook  react-native run-android",

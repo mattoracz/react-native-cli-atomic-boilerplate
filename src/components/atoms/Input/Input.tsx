@@ -15,6 +15,7 @@ export const Input: React.FC<InputProps> = props => {
       placeholder={props.title}
       keyboardType={props.keyboardType}
       secureTextEntry={props.secureTextEntry}
+      testID="input"
     />
   );
 };

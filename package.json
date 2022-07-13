@@ -13,7 +13,8 @@
     "ios-staging": "react-native run-ios --scheme \"ReactNativeCliAtomicBoilerplateStaging\"",
     "ios-production": "react-native run-ios --scheme \"ReactNativeCliAtomicBoilerplateProduction\"",
     "start": "react-native start",
-    "test": "jest",
+    "test": "jest --coverage",
+    "snapshot": "jest -u",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prestorybook": "rnstl",
     "storybook": "start-storybook -p 7007"

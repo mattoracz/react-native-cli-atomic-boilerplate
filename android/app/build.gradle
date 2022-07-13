@@ -1,13 +1,5 @@
-project.ext.envConfigFiles = [
-    release: ".env.production",
-    dev: ".env.local",
-    local: ".env.local",
-    staging: ".env.staging",
-    storybook: ".env.storybook",
-];
-
 apply plugin: "com.android.application"
-apply from: project(":react-native-config").projectDir.getPath() + "/dotenv.gradle"
+// apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 import com.android.build.OutputFile
 
@@ -89,6 +81,14 @@ import com.android.build.OutputFile
 project.ext.react = [
     enableHermes: false,  // clean and rebuild if changing
 ]
+
+// project.ext.envConfigFiles = [
+//     release: ".env.production",
+//     dev: ".env.local",
+//     local: ".env.local",
+//     staging: ".env.staging",
+//     storybook: ".env.storybook",
+// ];
 
 apply from: "../../node_modules/react-native/react.gradle"
 

@@ -3,8 +3,6 @@
 //
 // https://github.com/elderfo/react-native-storybook-loader.git
 
-// use yarn prestorybook to regenerate file
-
 function loadStories() {
   require('../src/components/atoms/Button/Button.stories');
   require('../src/components/atoms/Input/Input.stories');

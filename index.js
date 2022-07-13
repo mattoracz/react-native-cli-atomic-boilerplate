@@ -1,9 +1,12 @@
 import { AppRegistry } from 'react-native';
 import App from './src/App';
 import { name as appName } from './app.json';
+import Config from 'react-native-config';
+export { default } from './storybook';
 
-let StorybookUI = App;
-StorybookUI = __DEV__ ? require('./storybook').default : App;
+console.log('APP_MODE', Config.APP_MODE);
 
-AppRegistry.registerComponent('StorybookUI', () => StorybookUI);
-AppRegistry.registerComponent(appName, () => App);
+const storybookUI =
+  Config.APP_MODE === 'STORYBOOK' ? require('./storybook').default : App;
+
+AppRegistry.registerComponent(appName, () => storybookUI);

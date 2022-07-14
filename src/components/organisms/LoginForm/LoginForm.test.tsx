@@ -32,7 +32,7 @@ describe('LoginForm', () => {
     );
     const wrapper = render(component);
 
-    fireEvent(wrapper.getByTestId('submit-input'), 'onPress');
+    fireEvent(wrapper.getByTestId('submit-button'), 'onPress');
     expect(spyOnSubmit).toHaveBeenCalledTimes(1);
   });
 

@@ -122,7 +122,7 @@ exports[`LoginForm should render correctly 1`] = `
         "minWidth": 200,
       }
     }
-    testID="submit-input"
+    testID="submit-button"
   >
     <Text
       style={

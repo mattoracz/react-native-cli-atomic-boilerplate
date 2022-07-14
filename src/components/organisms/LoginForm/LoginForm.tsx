@@ -16,7 +16,7 @@ export const LoginForm: React.FC<LoginFormProps> = props => {
     <View style={styles.container}>
       <Input label="Email" keyboardType="email-address" testID="email-input" />
       <Input label="Password" secureTextEntry testID="password-input" />
-      <Button onPress={props.onSubmit} text="Sign in" testID="submit-input" />
+      <Button onPress={props.onSubmit} text="Sign in" testID="submit-button" />
       <PressableLabel onPress={props.onClickLabel} testID="registration-label">
         Don't have an account? Sign up
       </PressableLabel>

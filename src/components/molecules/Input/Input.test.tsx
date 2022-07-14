@@ -8,12 +8,12 @@ describe('TextInput', () => {
   });
 
   it('should render correctly', () => {
-    const tree = render(<Input label="Primary Input" />);
+    const tree = render(<Input testID="input" label="Primary Input" />);
     expect(tree).toMatchSnapshot();
   });
 
   it('should render input', () => {
-    const component = <Input label="Primary Input" />;
+    const component = <Input testID="input" label="Primary Input" />;
     const { getByTestId } = render(component);
     const input = getByTestId('input');
     expect(input).toBeDefined();
@@ -25,7 +25,7 @@ describe('TextInput', () => {
     const keyboardType = 'email-address';
 
     const { getByTestId } = render(
-      <Input label={placeHolder} keyboardType={keyboardType} />,
+      <Input testID="input" label={placeHolder} keyboardType={keyboardType} />,
     );
 
     const textInput = getByTestId(testID);
@@ -35,7 +35,7 @@ describe('TextInput', () => {
 
   it('should render input label', () => {
     const label = 'Primary Input';
-    const component = <Input label={label} />;
+    const component = <Input testID="input" label={label} />;
     const { getByText } = render(component);
     const input = getByText(label);
     expect(input).toBeDefined();

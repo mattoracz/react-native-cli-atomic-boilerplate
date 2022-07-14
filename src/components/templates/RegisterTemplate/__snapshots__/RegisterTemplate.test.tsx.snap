@@ -85,7 +85,7 @@ Array [
             "paddingRight": 17,
           }
         }
-        testID="input"
+        testID="name-input"
       />
     </View>
     <View
@@ -128,7 +128,7 @@ Array [
             "paddingRight": 17,
           }
         }
-        testID="input"
+        testID="email-input"
       />
     </View>
     <View
@@ -171,7 +171,7 @@ Array [
             "paddingRight": 17,
           }
         }
-        testID="input"
+        testID="password-input"
       />
     </View>
     <View
@@ -199,7 +199,7 @@ Array [
           "minWidth": 200,
         }
       }
-      testID="button"
+      testID="submit-button"
     >
       <Text
         style={
@@ -227,7 +227,7 @@ Array [
       onResponderTerminate={[Function]}
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
-      testID="logout-label"
+      testID="login-label"
     >
       <Text
         style={

@@ -14,10 +14,10 @@ interface LoginFormProps {
 export const LoginForm: React.FC<LoginFormProps> = props => {
   return (
     <View style={styles.container}>
-      <Input label="Email" keyboardType="email-address" />
-      <Input label="Password" secureTextEntry />
-      <Button onPress={props.onSubmit} text="Sign in" />
-      <PressableLabel onPress={props.onClickLabel} testID="logout-label">
+      <Input label="Email" keyboardType="email-address" testID="email-input" />
+      <Input label="Password" secureTextEntry testID="password-input" />
+      <Button onPress={props.onSubmit} text="Sign in" testID="submit-input" />
+      <PressableLabel onPress={props.onClickLabel} testID="registration-label">
         Don't have an account? Sign up
       </PressableLabel>
     </View>

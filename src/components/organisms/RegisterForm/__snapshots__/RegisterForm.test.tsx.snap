@@ -50,7 +50,7 @@ exports[`RegisterForm should render correctly 1`] = `
           "paddingRight": 17,
         }
       }
-      testID="input"
+      testID="name-input"
     />
   </View>
   <View
@@ -93,7 +93,7 @@ exports[`RegisterForm should render correctly 1`] = `
           "paddingRight": 17,
         }
       }
-      testID="input"
+      testID="email-input"
     />
   </View>
   <View
@@ -136,7 +136,7 @@ exports[`RegisterForm should render correctly 1`] = `
           "paddingRight": 17,
         }
       }
-      testID="input"
+      testID="password-input"
     />
   </View>
   <View
@@ -164,7 +164,7 @@ exports[`RegisterForm should render correctly 1`] = `
         "minWidth": 200,
       }
     }
-    testID="button"
+    testID="submit-button"
   >
     <Text
       style={
@@ -192,7 +192,7 @@ exports[`RegisterForm should render correctly 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    testID="logout-label"
+    testID="login-label"
   >
     <Text
       style={

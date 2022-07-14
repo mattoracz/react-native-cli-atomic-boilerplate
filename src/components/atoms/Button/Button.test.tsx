@@ -10,13 +10,17 @@ describe('Button', () => {
   });
 
   it('should render correctly', () => {
-    const tree = render(<Button text="Button Text" onPress={spyOnPress} />);
+    const tree = render(
+      <Button testID="button" text="Button Text" onPress={spyOnPress} />,
+    );
 
     expect(tree).toMatchSnapshot();
   });
 
   it('should call the provided onPress function when pressed', () => {
-    const component = <Button text="Button Text" onPress={spyOnPress} />;
+    const component = (
+      <Button testID="button" text="Button Text" onPress={spyOnPress} />
+    );
     const wrapper = render(component);
 
     fireEvent(wrapper.getByTestId('button'), 'onPress');
@@ -24,21 +28,27 @@ describe('Button', () => {
   });
 
   it('should render button', () => {
-    const component = <Button text="Button Text" onPress={spyOnPress} />;
+    const component = (
+      <Button testID="button" text="Button Text" onPress={spyOnPress} />
+    );
     const { getByTestId } = render(component);
     const button = getByTestId('button');
     expect(button).toBeDefined();
   });
 
   it('should render button text', () => {
-    const component = <Button text="Button Text" onPress={spyOnPress} />;
+    const component = (
+      <Button testID="button" text="Button Text" onPress={spyOnPress} />
+    );
     const { getByTestId } = render(component);
     const buttonText = getByTestId('button-text');
     expect(buttonText).toBeDefined();
   });
 
   it('should render title correctly', () => {
-    const component = <Button text="Button Text" onPress={spyOnPress} />;
+    const component = (
+      <Button testID="button" text="Button Text" onPress={spyOnPress} />
+    );
     const { getByText } = render(component);
     expect(getByText('Button Text')).toBeDefined();
   });

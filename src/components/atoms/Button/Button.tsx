@@ -5,6 +5,7 @@ import { styles } from './Button.style';
 export interface ButtonProps {
   onPress?: () => void;
   text: string;
+  testID: string;
 }
 
 export const Button: React.FC<ButtonProps> = props => {
@@ -12,7 +13,7 @@ export const Button: React.FC<ButtonProps> = props => {
     <Pressable
       onPress={props.onPress}
       style={styles.buttonContainer}
-      testID="button">
+      testID={props.testID}>
       <Text style={styles.buttonText} testID="button-text">
         {props.text}
       </Text>

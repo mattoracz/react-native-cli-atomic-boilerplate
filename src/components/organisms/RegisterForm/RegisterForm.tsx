@@ -14,11 +14,11 @@ interface RegisterFormProps {
 export const RegisterForm: React.FC<RegisterFormProps> = props => {
   return (
     <View style={styles.container}>
-      <Input label="Full Name" />
-      <Input label="Email" keyboardType="email-address" />
-      <Input label="Password" secureTextEntry />
-      <Button onPress={props.onSubmit} text="Sign up" />
-      <PressableLabel onPress={props.onPressLabel} testID="logout-label">
+      <Input label="Full Name" testID="name-input" />
+      <Input label="Email" keyboardType="email-address" testID="email-input" />
+      <Input label="Password" secureTextEntry testID="password-input" />
+      <Button onPress={props.onSubmit} text="Sign up" testID="submit-button" />
+      <PressableLabel onPress={props.onPressLabel} testID="login-label">
         Have an account? Sign in
       </PressableLabel>
     </View>

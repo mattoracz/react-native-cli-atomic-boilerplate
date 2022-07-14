@@ -9,6 +9,7 @@ interface TextInputProps {
   placeholder?: string;
   keyboardType?: KeyboardTypeOptions;
   secureTextEntry?: boolean;
+  testID: string;
 }
 
 export const TextInput: React.FC<TextInputProps> = props => {
@@ -18,7 +19,7 @@ export const TextInput: React.FC<TextInputProps> = props => {
       placeholder={props.placeholder}
       keyboardType={props.keyboardType}
       secureTextEntry={props.secureTextEntry}
-      testID="input"
+      testID={props.testID}
     />
   );
 };

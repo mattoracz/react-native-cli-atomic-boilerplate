@@ -5,4 +5,8 @@ import CenterView from '../../../../storybook/utils/CenterView/CenterView';
 
 storiesOf('PressableLabel', module)
   .addDecorator(story => <CenterView>{story()}</CenterView>)
-  .add('default', () => <PressableLabel>Label Text</PressableLabel>);
+  .add('default', () => (
+    <PressableLabel testID="perssable-label" onPress={() => {}}>
+      Label Text
+    </PressableLabel>
+  ));

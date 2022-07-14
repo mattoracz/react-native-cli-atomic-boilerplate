@@ -18,7 +18,7 @@ export const RegisterForm: React.FC<RegisterFormProps> = props => {
       <Input label="Email" keyboardType="email-address" />
       <Input label="Password" secureTextEntry />
       <Button onPress={props.onSubmit} text="Sign up" />
-      <PressableLabel onPress={props.onPressLabel}>
+      <PressableLabel onPress={props.onPressLabel} testID="logout-label">
         Have an account? Sign in
       </PressableLabel>
     </View>

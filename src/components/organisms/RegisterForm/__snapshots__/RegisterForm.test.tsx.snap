@@ -192,7 +192,7 @@ exports[`RegisterForm should render correctly 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    testID="pressable-label"
+    testID="logout-label"
   >
     <Text
       style={

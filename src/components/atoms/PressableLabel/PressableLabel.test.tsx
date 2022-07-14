@@ -21,7 +21,7 @@ describe('PressableLabel', () => {
 
   it('should render Pressable Label', () => {
     const component = (
-      <PressableLabel onPress={spyOnPress}>
+      <PressableLabel testID="pressable-label" onPress={spyOnPress}>
         Primary PressableLabel
       </PressableLabel>
     );
@@ -32,7 +32,7 @@ describe('PressableLabel', () => {
 
   it('should call the provided onPress function when pressed', () => {
     const component = (
-      <PressableLabel onPress={spyOnPress}>
+      <PressableLabel testID="pressable-label" onPress={spyOnPress}>
         Primary PressableLabel
       </PressableLabel>
     );
@@ -44,7 +44,7 @@ describe('PressableLabel', () => {
 
   it('should render text correctly', () => {
     const component = (
-      <PressableLabel onPress={spyOnPress}>
+      <PressableLabel testID="pressable-label" onPress={spyOnPress}>
         Primary PressableLabel
       </PressableLabel>
     );

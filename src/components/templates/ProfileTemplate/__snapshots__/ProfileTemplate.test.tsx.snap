@@ -58,7 +58,6 @@ Array [
       onResponderTerminate={[Function]}
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
-      testID="pressable-label"
     >
       <Text
         style={

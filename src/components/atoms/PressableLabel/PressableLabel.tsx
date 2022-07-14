@@ -5,11 +5,12 @@ import { Label } from '../Label/Label';
 interface PressableLabelProps {
   children: ReactNode;
   onPress: () => void;
+  testID: string;
 }
 
 export const PressableLabel: React.FC<PressableLabelProps> = props => {
   return (
-    <Pressable onPress={props.onPress} testID="pressable-label">
+    <Pressable onPress={props.onPress} testID={props.testID}>
       <Label>{props.children}</Label>
     </Pressable>
   );

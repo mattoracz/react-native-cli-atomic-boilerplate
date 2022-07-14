@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterTemplate should render correctly 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "flex": 2,
+        "flexDirection": "column",
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": 45,
+          "minWidth": 200,
+        }
+      }
+      testID="header"
+    >
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 30,
+            "fontWeight": "600",
+          }
+        }
+        testID="header-text"
+      >
+        Register Form title
+      </Text>
+    </View>
+  </View>,
+  <View
+    style={
+      Object {
+        "flex": 7,
+        "flexDirection": "column",
+        "justifyContent": "space-between",
+        "padding": 30,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "height": 78,
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
+        }
+        testID="label"
+      >
+        Full Name
+      </Text>
+      <TextInput
+        placeholder="Full Name"
+        style={
+          Object {
+            "alignItems": "center",
+            "borderColor": "#08949B",
+            "borderRadius": 20,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "fontSize": 16,
+            "fontWeight": "600",
+            "justifyContent": "center",
+            "minHeight": 50,
+            "minWidth": 200,
+            "paddingLeft": 17,
+            "paddingRight": 17,
+          }
+        }
+        testID="input"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "height": 78,
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
+        }
+        testID="label"
+      >
+        Email
+      </Text>
+      <TextInput
+        keyboardType="email-address"
+        placeholder="Email"
+        style={
+          Object {
+            "alignItems": "center",
+            "borderColor": "#08949B",
+            "borderRadius": 20,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "fontSize": 16,
+            "fontWeight": "600",
+            "justifyContent": "center",
+            "minHeight": 50,
+            "minWidth": 200,
+            "paddingLeft": 17,
+            "paddingRight": 17,
+          }
+        }
+        testID="input"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "height": 78,
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
+        }
+        testID="label"
+      >
+        Password
+      </Text>
+      <TextInput
+        placeholder="Password"
+        secureTextEntry={true}
+        style={
+          Object {
+            "alignItems": "center",
+            "borderColor": "#08949B",
+            "borderRadius": 20,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "fontSize": 16,
+            "fontWeight": "600",
+            "justifyContent": "center",
+            "minHeight": 50,
+            "minWidth": 200,
+            "paddingLeft": 17,
+            "paddingRight": 17,
+          }
+        }
+        testID="input"
+      />
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#08949B",
+          "borderRadius": 20,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "justifyContent": "center",
+          "minHeight": 60,
+          "minWidth": 200,
+        }
+      }
+      testID="button"
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
+        }
+        testID="button-text"
+      >
+        Sign up
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="pressable-label"
+    >
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
+        }
+        testID="label"
+      >
+        Have an account? Sign in
+      </Text>
+    </View>
+  </View>,
+  <View
+    style={
+      Object {
+        "flex": 4,
+      }
+    }
+  />,
+]
+`;

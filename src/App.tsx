@@ -7,9 +7,11 @@ import {
 
 import ProfileScreen from './screens/ProfileScreen/ProfileScreen';
 import LoginScreen from './screens/LoginScreen/LoginScreen';
+import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
 
 type RootStackParamList = {
   LoginScreen: undefined;
+  RegisterScreen: undefined;
   ProfileScreen: { id: number; firstName: string; lastName: string };
 };
 
@@ -25,6 +27,11 @@ const App = () => {
         <Stack.Screen
           name="LoginScreen"
           component={LoginScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="RegisterScreen"
+          component={RegisterScreen}
           options={{ headerShown: false }}
         />
         <Stack.Screen

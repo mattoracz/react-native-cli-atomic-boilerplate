@@ -11,7 +11,11 @@ describe('LoginTemplate', () => {
 
   it('should render correctly', () => {
     const tree = render(
-      <LoginTemplate title={'Login Form title'} onSubmitForm={() => {}} />,
+      <LoginTemplate
+        title={'Login Form title'}
+        onSubmitForm={() => {}}
+        onClickLabel={() => {}}
+      />,
     );
 
     expect(tree).toMatchSnapshot();

@@ -169,7 +169,35 @@ Array [
         }
         testID="button-text"
       >
-        Go To Profile
+        Sign in
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="pressable-label"
+    >
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
+        }
+        testID="label"
+      >
+        Don't have an account? Sign up
       </Text>
     </View>
   </View>,

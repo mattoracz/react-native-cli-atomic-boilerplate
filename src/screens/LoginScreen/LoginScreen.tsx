@@ -22,6 +22,10 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
     });
   };
 
+  const onClickLabel = () => {
+    navigation.navigate('RegisterScreen');
+  };
+
   return (
     <SafeAreaView style={backgroundStyle}>
       <View style={{ height: '100%' }}>
@@ -29,6 +33,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
         <LoginTemplate
           title="Sign in to your account"
           onSubmitForm={onSubmitLoginForm}
+          onClickLabel={onClickLabel}
         />
       </View>
     </SafeAreaView>

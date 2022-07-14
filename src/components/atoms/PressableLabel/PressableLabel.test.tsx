@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import { LoginForm } from './LoginForm';
+import { PressableLabel } from './PressableLabel';
 
-describe('LoginForm', () => {
+describe('PressableLabel', () => {
   const spyOnPress = jest.fn();
 
   beforeEach(() => {
@@ -11,11 +11,7 @@ describe('LoginForm', () => {
 
   it('should render correctly', () => {
     const tree = render(
-      <LoginForm
-        onClickLabel={() => {}}
-        onSubmit={() => {}}
-        title={'Login Form title'}
-      />,
+      <PressableLabel>Primary PressableLabel</PressableLabel>,
     );
 
     expect(tree).toMatchSnapshot();

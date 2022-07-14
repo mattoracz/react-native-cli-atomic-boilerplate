@@ -38,7 +38,7 @@ exports[`Button should render correctly 1`] = `
     }
     testID="button-text"
   >
-    Primary Button
+    Button Text
   </Text>
 </View>
 `;

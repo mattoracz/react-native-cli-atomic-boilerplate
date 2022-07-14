@@ -10,4 +10,4 @@ export const actions = {
 
 storiesOf('Button', module)
   .addDecorator(story => <CenterView>{story()}</CenterView>)
-  .add('default', () => <Button text="Primary Button" />);
+  .add('default', () => <Button text="Button Text" />);

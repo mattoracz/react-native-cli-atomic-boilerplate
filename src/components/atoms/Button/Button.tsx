@@ -19,8 +19,3 @@ export const Button: React.FC<ButtonProps> = props => {
     </Pressable>
   );
 };
-
-Button.defaultProps = {
-  onPress: () => {},
-  text: 'Primary Button',
-};

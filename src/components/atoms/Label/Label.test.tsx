@@ -12,4 +12,17 @@ describe('Label', () => {
 
     expect(tree).toMatchSnapshot();
   });
+
+  it('should render label', () => {
+    const component = <Label>Primary Label</Label>;
+    const { getByTestId } = render(component);
+    const buttonText = getByTestId('label');
+    expect(buttonText).toBeDefined();
+  });
+
+  it('should render label text correctly', () => {
+    const component = <Label>Primary Label</Label>;
+    const { getByText } = render(component);
+    expect(getByText('Primary Label')).toBeDefined();
+  });
 });

@@ -12,4 +12,25 @@ describe('TextInput', () => {
 
     expect(tree).toMatchSnapshot();
   });
+
+  it('should render input', () => {
+    const component = <TextInput placeholder="Primary Input" />;
+    const { getByTestId } = render(component);
+    const input = getByTestId('input');
+    expect(input).toBeDefined();
+  });
+
+  it('sets props', () => {
+    const testID = 'input';
+    const placeHolder = 'input placeholder';
+    const keyboardType = 'email-address';
+
+    const { getByTestId } = render(
+      <TextInput placeholder={placeHolder} keyboardType={keyboardType} />,
+    );
+
+    const textInput = getByTestId(testID);
+    expect(textInput.props.placeholder).toEqual(placeHolder);
+    expect(textInput.props.keyboardType).toEqual(keyboardType);
+  });
 });

@@ -11,7 +11,9 @@ export const ProfileTemplate: React.FC<ProfileTemplateProps> = props => {
   return (
     <>
       <HeaderBox>{props.title}</HeaderBox>
-      <LogoutBox onPressLogout={props.onClickLogoutLabel}>Logout</LogoutBox>
+      <LogoutBox testID="logout-label" onPressLogout={props.onClickLogoutLabel}>
+        Logout
+      </LogoutBox>
       <Footer />
     </>
   );

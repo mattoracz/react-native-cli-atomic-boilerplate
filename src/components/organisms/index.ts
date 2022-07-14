@@ -1,3 +1,4 @@
 export { LoginForm } from './LoginForm/LoginForm';
-export { LoginHeader } from './LoginHeader/LoginHeader';
-export { LoginFooter } from './LoginFooter/LoginFooter';
+export { HeaderBox } from './HeaderBox/HeaderBox';
+export { Footer } from './Footer/Footer';
+export { LogoutBox } from './LogoutBox/LogoutBox';

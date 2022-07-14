@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react-native';
-import { LoginFooter } from './LoginFooter';
+import { ProfileTemplate } from './ProfileTemplate';
 import CenterView from '../../../../storybook/utils/CenterView/CenterView';
 
-storiesOf('LoginFooter', module)
+storiesOf('ProfileTemplate', module)
   .addDecorator(story => <CenterView>{story()}</CenterView>)
-  .add('default', () => <LoginFooter />);
+  .add('default', () => (
+    <ProfileTemplate title={'Profile title'} onClickLogoutLabel={() => {}} />
+  ));

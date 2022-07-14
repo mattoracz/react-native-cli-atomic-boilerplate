@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import { LoginFooter } from './LoginFooter';
+import { LogoutBox } from './LogoutBox';
 
-describe('LoginFooter', () => {
+describe('LogoutBox', () => {
   const spyOnPress = jest.fn();
 
   beforeEach(() => {
@@ -10,7 +10,9 @@ describe('LoginFooter', () => {
   });
 
   it('should render correctly', () => {
-    const tree = render(<LoginFooter />);
+    const tree = render(
+      <LogoutBox onPressLogout={() => {}}>Logout Box title</LogoutBox>,
+    );
 
     expect(tree).toMatchSnapshot();
   });

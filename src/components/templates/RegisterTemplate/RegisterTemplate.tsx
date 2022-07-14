@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { LoginFooter, LoginHeader } from '../../organisms';
+import { Footer, HeaderBox } from '../../organisms';
 import { RegisterForm } from '../../organisms/RegisterForm/RegisterForm';
 
 interface RegisterTemplateProps {
@@ -11,12 +11,12 @@ interface RegisterTemplateProps {
 
 export const RegisterTemplate: React.FC<RegisterTemplateProps> = props => (
   <>
-    <LoginHeader>{props.title}</LoginHeader>
+    <HeaderBox>{props.title}</HeaderBox>
     <RegisterForm
       title={props.title}
       onSubmit={props.onSubmitForm}
       onPressLabel={props.onPressLabel}
     />
-    <LoginFooter />
+    <Footer />
   </>
 );

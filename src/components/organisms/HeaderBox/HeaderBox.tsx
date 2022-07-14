@@ -2,13 +2,13 @@ import React, { ReactNode } from 'react';
 import { View } from 'react-native';
 
 import { Header } from '../../molecules';
-import { styles } from './LoginHeader.style';
+import { styles } from './HeaderBox.style';
 
-interface LoginHeaderProps {
+interface HeaderBoxProps {
   children: ReactNode;
 }
 
-export const LoginHeader: React.FC<LoginHeaderProps> = props => {
+export const HeaderBox: React.FC<HeaderBoxProps> = props => {
   return (
     <View style={styles.container}>
       <Header>{props.children}</Header>

@@ -10,9 +10,9 @@ function loadStories() {
   require('../src/components/atoms/TextInput/TextInput.stories');
   require('../src/components/molecules/Header/Header.stories');
   require('../src/components/molecules/Input/Input.stories');
-  require('../src/components/organisms/LoginFooter/LoginFooter.stories');
+  require('../src/components/organisms/Footer/Footer.stories');
   require('../src/components/organisms/LoginForm/LoginForm.stories');
-  require('../src/components/organisms/LoginHeader/LoginHeader.stories');
+  require('../src/components/organisms/HeaderBox/HeaderBox.stories');
   require('../src/components/organisms/RegisterForm/RegisterForm.stories');
   require('../src/components/templates/LoginTemplate/LoginTemplate.stories');
   require('../src/components/templates/RegisterTemplate/RegisterTemplate.stories');
@@ -25,9 +25,9 @@ const stories = [
   '../src/components/atoms/TextInput/TextInput.stories',
   '../src/components/molecules/Header/Header.stories',
   '../src/components/molecules/Input/Input.stories',
-  '../src/components/organisms/LoginFooter/LoginFooter.stories',
+  '../src/components/organisms/Footer/Footer.stories',
   '../src/components/organisms/LoginForm/LoginForm.stories',
-  '../src/components/organisms/LoginHeader/LoginHeader.stories',
+  '../src/components/organisms/HeaderBox/HeaderBox.stories',
   '../src/components/organisms/RegisterForm/RegisterForm.stories',
   '../src/components/templates/LoginTemplate/LoginTemplate.stories',
   '../src/components/templates/RegisterTemplate/RegisterTemplate.stories',

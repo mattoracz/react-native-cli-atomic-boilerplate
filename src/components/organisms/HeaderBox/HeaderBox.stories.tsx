@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react-native';
-import { LoginHeader } from './LoginHeader';
+import { HeaderBox } from './HeaderBox';
 import CenterView from '../../../../storybook/utils/CenterView/CenterView';
 
-storiesOf('LoginHeader', module)
+storiesOf('HeaderBox', module)
   .addDecorator(story => <CenterView>{story()}</CenterView>)
-  .add('default', () => <LoginHeader>Login Header Title</LoginHeader>);
+  .add('default', () => <HeaderBox>Header Box Title</HeaderBox>);

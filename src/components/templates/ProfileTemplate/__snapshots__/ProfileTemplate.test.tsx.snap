@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileTemplate should render correctly 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "flex": 2,
+        "flexDirection": "column",
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": 45,
+          "minWidth": 200,
+        }
+      }
+      testID="header"
+    >
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 30,
+            "fontWeight": "600",
+          }
+        }
+        testID="header-text"
+      >
+        Profile title
+      </Text>
+    </View>
+  </View>,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="pressable-label"
+    >
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
+        }
+        testID="label"
+      >
+        Logout
+      </Text>
+    </View>
+  </View>,
+  <View
+    style={
+      Object {
+        "flex": 4,
+      }
+    }
+  />,
+]
+`;

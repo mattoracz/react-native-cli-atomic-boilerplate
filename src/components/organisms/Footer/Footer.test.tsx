@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import { LoginHeader } from './LoginHeader';
+import { Footer } from './Footer';
 
-describe('LoginHeader', () => {
+describe('Footer', () => {
   const spyOnPress = jest.fn();
 
   beforeEach(() => {
@@ -10,7 +10,7 @@ describe('LoginHeader', () => {
   });
 
   it('should render correctly', () => {
-    const tree = render(<LoginHeader>Login Form title</LoginHeader>);
+    const tree = render(<Footer />);
 
     expect(tree).toMatchSnapshot();
   });

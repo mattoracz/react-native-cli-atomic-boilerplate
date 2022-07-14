@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { LoginForm, LoginFooter, LoginHeader } from '../../organisms';
+import { LoginForm, Footer, HeaderBox } from '../../organisms';
 
 interface LoginTemplateProps {
   onSubmitForm: () => void;
@@ -11,13 +11,13 @@ interface LoginTemplateProps {
 export const LoginTemplate: React.FC<LoginTemplateProps> = props => {
   return (
     <>
-      <LoginHeader>{props.title}</LoginHeader>
+      <HeaderBox>{props.title}</HeaderBox>
       <LoginForm
         title={props.title}
         onSubmit={props.onSubmitForm}
         onClickLabel={props.onClickLabel}
       />
-      <LoginFooter />
+      <Footer />
     </>
   );
 };

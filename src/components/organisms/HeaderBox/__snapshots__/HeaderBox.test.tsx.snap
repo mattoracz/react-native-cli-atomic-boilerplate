@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoginHeader should render correctly 1`] = `
+exports[`HeaderBox should render correctly 1`] = `
 <View
   style={
     Object {
@@ -31,7 +31,7 @@ exports[`LoginHeader should render correctly 1`] = `
       }
       testID="header-text"
     >
-      Login Form title
+      Header Box title
     </Text>
   </View>
 </View>

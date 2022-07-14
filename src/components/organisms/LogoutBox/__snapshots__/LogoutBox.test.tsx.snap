@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogoutBox should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 2,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="pressable-label"
+  >
+    <Text
+      style={
+        Object {
+          "color": "black",
+          "fontSize": 16,
+          "fontWeight": "600",
+        }
+      }
+      testID="label"
+    >
+      Logout Box title
+    </Text>
+  </View>
+</View>
+`;

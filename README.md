@@ -26,3 +26,8 @@ $ yarn ios
 ```
 $ yarn android
 ```
+
+## Good read
+
+* [Atomic Design for Developers: Project Structure - Part 1](https://betterprogramming.pub/atomic-design-for-developers-part-1-b41e547a555c)
+* [Atomic Design for Developers: Atomic Engineering - Part 2](https://medium.com/swlh/atomic-design-for-developers-atomic-engineering-3591af676ef4)

@@ -1,6 +1,8 @@
 import React from 'react';
+import { SafeAreaView, StatusBar, View } from 'react-native';
 
 import { LoginForm, Footer, HeaderBox } from '../../organisms';
+import { styles } from './LoginTemplate.style';
 
 interface LoginTemplateProps {
   onSubmitForm: () => void;
@@ -10,14 +12,17 @@ interface LoginTemplateProps {
 
 export const LoginTemplate: React.FC<LoginTemplateProps> = props => {
   return (
-    <>
-      <HeaderBox>{props.title}</HeaderBox>
-      <LoginForm
-        title={props.title}
-        onSubmit={props.onSubmitForm}
-        onClickLabel={props.onClickLabel}
-      />
-      <Footer />
-    </>
+    <SafeAreaView>
+      <View style={styles.container}>
+        <StatusBar backgroundColor="transparent" translucent={true} />
+        <HeaderBox>{props.title}</HeaderBox>
+        <LoginForm
+          title={props.title}
+          onSubmit={props.onSubmitForm}
+          onClickLabel={props.onClickLabel}
+        />
+        <Footer />
+      </View>
+    </SafeAreaView>
   );
 };

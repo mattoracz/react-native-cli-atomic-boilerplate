@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Button, Label, PressableLabel } from '../../atoms';
+import { Button, PressableLabel } from '../../atoms';
 import { Input } from '../../molecules';
 import { styles } from './LoginForm.style';
 

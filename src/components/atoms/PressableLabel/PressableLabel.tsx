@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
-import { Text, Pressable } from 'react-native';
+import { Pressable } from 'react-native';
 import { Label } from '../Label/Label';
-import { styles } from './PressableLabel.style';
 
 interface PressableLabelProps {
   children: ReactNode;

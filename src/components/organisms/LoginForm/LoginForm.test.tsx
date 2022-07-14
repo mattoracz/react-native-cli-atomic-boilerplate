@@ -3,8 +3,6 @@ import { render } from '@testing-library/react-native';
 import { LoginForm } from './LoginForm';
 
 describe('LoginForm', () => {
-  const spyOnPress = jest.fn();
-
   beforeEach(() => {
     jest.clearAllMocks();
   });

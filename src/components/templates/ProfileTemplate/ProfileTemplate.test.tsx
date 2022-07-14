@@ -3,8 +3,6 @@ import { render } from '@testing-library/react-native';
 import { ProfileTemplate } from './ProfileTemplate';
 
 describe('ProfileTemplate', () => {
-  const spyOnPress = jest.fn();
-
   beforeEach(() => {
     jest.clearAllMocks();
   });

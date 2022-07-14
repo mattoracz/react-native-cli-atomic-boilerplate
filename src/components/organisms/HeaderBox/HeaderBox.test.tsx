@@ -3,8 +3,6 @@ import { render } from '@testing-library/react-native';
 import { HeaderBox } from './HeaderBox';
 
 describe('HeaderBox', () => {
-  const spyOnPress = jest.fn();
-
   beforeEach(() => {
     jest.clearAllMocks();
   });

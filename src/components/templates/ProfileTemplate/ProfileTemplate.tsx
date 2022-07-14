@@ -1,4 +1,3 @@
-import { PressableLabel } from 'components/atoms';
 import React from 'react';
 
 import { Footer, HeaderBox, LogoutBox } from '../../organisms';

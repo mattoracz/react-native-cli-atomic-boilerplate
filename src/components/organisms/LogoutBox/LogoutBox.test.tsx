@@ -3,8 +3,6 @@ import { render } from '@testing-library/react-native';
 import { LogoutBox } from './LogoutBox';
 
 describe('LogoutBox', () => {
-  const spyOnPress = jest.fn();
-
   beforeEach(() => {
     jest.clearAllMocks();
   });

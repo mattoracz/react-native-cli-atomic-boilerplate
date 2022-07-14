@@ -3,8 +3,6 @@ import { render } from '@testing-library/react-native';
 import { Label } from './Label';
 
 describe('Label', () => {
-  const spyOnPress = jest.fn();
-
   beforeEach(() => {
     jest.clearAllMocks();
   });

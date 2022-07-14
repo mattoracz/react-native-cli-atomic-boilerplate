@@ -2,7 +2,6 @@ import { PressableLabel } from 'components/atoms';
 import React, { ReactNode } from 'react';
 import { View } from 'react-native';
 
-import { Header } from '../../molecules';
 import { styles } from './LogoutBox.style';
 
 interface LogoutBoxProps {

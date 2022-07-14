@@ -26,8 +26,14 @@
     "test": "jest --coverage",
     "snapshot": "jest -u",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "prestorybook": "rnstl",
     "storybook": "start-storybook -p 7007"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}?(x)": [
+      "yarn lint"
+    ]
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.11",

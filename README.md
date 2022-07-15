@@ -1,3 +1,5 @@
+![ReactNativeBoilerplate](/.github/images/header.png)
+
 # React Native CLI - Atomic Boilerplate
 
 ## Getting started

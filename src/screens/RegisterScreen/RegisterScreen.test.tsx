@@ -23,13 +23,6 @@ describe('RegisterScreen', () => {
     expect(screen).toMatchSnapshot();
   });
 
-  it('should call the provided onSubmitButton function when pressed', () => {
-    const screen = <RegisterScreen />;
-    const wrapper = render(screen);
-
-    fireEvent(wrapper.getByTestId('submit-button'), 'onPress');
-  });
-
   it('should call the provided onSubmitButton function when pressed', async () => {
     const screen = <RegisterScreen />;
     const wrapper = render(screen);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render, waitFor } from '@testing-library/react-native';
+import { act, fireEvent, render, waitFor } from '@testing-library/react-native';
 import ProfileScreen from './ProfileScreen';
 import { ScreenName } from 'screens/ScreenName';
 
@@ -31,9 +31,10 @@ describe('ProfileScreen', () => {
     const wrapper = render(screen);
 
     fireEvent(wrapper.getByTestId('logout-label'), 'onPress');
-    await waitFor(() =>
-      expect(mockNavigate).toBeCalledWith(ScreenName.LoginScreen),
+    await act(async () =>
+      waitFor(() =>
+        expect(mockNavigate).toBeCalledWith(ScreenName.LoginScreen),
+      ),
     );
-    await waitFor(() => expect(mockNavigate).toHaveBeenCalledTimes(1));
   });
 });

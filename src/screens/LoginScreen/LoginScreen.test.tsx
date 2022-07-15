@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render, waitFor } from '@testing-library/react-native';
+import { act, fireEvent, render, waitFor } from '@testing-library/react-native';
 import LoginScreen from './LoginScreen';
 import { ScreenName } from 'screens/ScreenName';
 
@@ -29,14 +29,15 @@ describe('LoginScreen', () => {
     const wrapper = render(screen);
 
     fireEvent(wrapper.getByTestId('submit-button'), 'onPress');
-    await waitFor(() =>
-      expect(mockNavigate).toBeCalledWith(ScreenName.ProfileScreen, {
-        id: 0,
-        firstName: 'Jon',
-        lastName: 'Doe',
-      }),
+    await act(async () =>
+      waitFor(() =>
+        expect(mockNavigate).toBeCalledWith(ScreenName.ProfileScreen, {
+          id: 0,
+          firstName: 'Jon',
+          lastName: 'Doe',
+        }),
+      ),
     );
-    await waitFor(() => expect(mockNavigate).toHaveBeenCalledTimes(1));
   });
 
   it('should call the provided onClick function when pressed', async () => {
@@ -44,9 +45,10 @@ describe('LoginScreen', () => {
     const wrapper = render(screen);
 
     fireEvent(wrapper.getByTestId('registration-label'), 'onPress');
-    await waitFor(() =>
-      expect(mockNavigate).toBeCalledWith(ScreenName.RegisterScreen),
+    await act(async () =>
+      waitFor(() =>
+        expect(mockNavigate).toBeCalledWith(ScreenName.RegisterScreen),
+      ),
     );
-    await waitFor(() => expect(mockNavigate).toHaveBeenCalledTimes(1));
   });
 });

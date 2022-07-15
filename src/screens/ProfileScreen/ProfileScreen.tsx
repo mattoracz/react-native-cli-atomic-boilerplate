@@ -1,13 +1,20 @@
 import React from 'react';
 
-import { StackNativeScreenProps } from '../../App';
+import { StackNavigationProp } from '@react-navigation/stack';
 import { ProfileTemplate } from 'components/templates';
+import { RootStackParamList } from 'App';
+import { ScreenName } from 'screens/ScreenName';
+import { useNavigation } from '@react-navigation/native';
 
-type ProfileScreenProps = StackNativeScreenProps<'ProfileScreen'>;
+type ProfileScreenProps = {
+  route: { params: { firstName: string; id: number; lastName: string } };
+};
 
-const ProfileScreen: React.FC<ProfileScreenProps> = ({ route, navigation }) => {
+const ProfileScreen: React.FC<ProfileScreenProps> = ({ route }) => {
+  const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
+
   const onClickLogoutLabel = () => {
-    navigation.navigate('LoginScreen');
+    navigation.navigate(ScreenName.LoginScreen);
   };
 
   return (

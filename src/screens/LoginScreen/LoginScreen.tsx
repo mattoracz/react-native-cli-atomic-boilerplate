@@ -1,13 +1,18 @@
 import React from 'react';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { useNavigation } from '@react-navigation/native';
 
-import { StackNativeScreenProps } from '../../App';
 import { LoginTemplate } from '../../components/templates';
+import { RootStackParamList } from 'App';
+import { ScreenName } from 'screens/ScreenName';
 
-type LoginScreenProps = StackNativeScreenProps<'LoginScreen'>;
+export type LoginScreenProps = {};
 
-const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
+const LoginScreen: React.FC<LoginScreenProps> = () => {
+  const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
+
   const onSubmitLoginForm = () => {
-    navigation.navigate('ProfileScreen', {
+    navigation.navigate(ScreenName.ProfileScreen, {
       id: 0,
       firstName: 'Jon',
       lastName: 'Doe',
@@ -15,7 +20,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
   };
 
   const onClickLabel = () => {
-    navigation.navigate('RegisterScreen');
+    navigation.navigate(ScreenName.RegisterScreen);
   };
 
   return (

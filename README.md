@@ -1,8 +1,7 @@
 ![ReactNativeBoilerplate](/.github/images/header.png)
-
 # React Native CLI - Atomic Boilerplate
 
-## Getting started
+# Getting started
 
 This boilerplate is based on React Native CLI please follow the instructions from [React Native Documentation](https://reactnative.dev/docs/environment-setup#installing-dependencies) set up your environment. Just remember to skip section [Creating-A-New-Application](https://reactnative.dev/docs/environment-setup#creating-a-new-application)
 
@@ -27,6 +26,28 @@ $ yarn ios
 ### ANDROID
 ```
 $ yarn android
+```
+
+# How to change project name
+Download [react-native-rename](https://www.npmjs.com/package/react-native-rename)
+```
+$ npm install react-native-rename -g
+```
+Run command react-native-rename with new app name and new bundle name
+Example new name: "ReactNativeDappStarter"
+```
+$ react-native-rename "ReactNativeDappStarter" -b com.reactnativedappstarter
+```
+Search & Replace in project
+```
+"ReactNativeCliAtomicBoilerplate" -> "ReactNativeDappStarter"
+"reactnativecliatomicboilerplate" -> "reactnativedappstarter"
+```
+```
+$ cd ios && pod install
+```
+```
+$ yarn ios
 ```
 
 ## Good read

@@ -38,11 +38,21 @@ Example new name: "ReactNativeDappStarter"
 ```
 $ react-native-rename "ReactNativeDappStarter" -b com.reactnativedappstarter
 ```
+Rename ios schemas
+```
+cd ios/ReactNativeDappStarter.xcodeproj/ReactNativeCliAtomicBoilerplate.xcodeproj/xcshareddata/xcschemes
+ReactNativeCliAtomicBoilerplate.xcscheme -> ReactNativeDappStarter.xcscheme
+ReactNativeCliAtomicBoilerplateStaging.xcscheme -> ReactNativeDappStarterStaging.xcscheme
+ReactNativeCliAtomicBoilerplateLocal.xcscheme -> ReactNativeDappStarterLocal.xcscheme
+ReactNativeCliAtomicBoilerplateStorybook.xcscheme -> ReactNativeDappStarterStorybook.xcscheme
+ReactNativeCliAtomicBoilerplateProduction.xcscheme -> ReactNativeDappStarterProduction.xcscheme
+```
 Search & Replace in project
 ```
 "ReactNativeCliAtomicBoilerplate" -> "ReactNativeDappStarter"
 "reactnativecliatomicboilerplate" -> "reactnativedappstarter"
 ```
+IOS
 ```
 $ cd ios && pod install
 ```
